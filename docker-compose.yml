@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  vuetemplate:
+    build: .
+    container_name: VUETEMPLATE
+    networks:
+      - internal
+    command: npm run prod
+
+networks:
+  internal:
+    external: true
